@@ -10,9 +10,9 @@
 	<name>git-release-example Maven Webapp</name>
 
 	<scm>
-		<connection>scm:git:https://github.com/DruvaRam/maven-release.git</connection>
-		<developerConnection>scm:git:https://github.com/DruvaRam/maven-release.git</developerConnection>
-		<url>scm:git:https://github.com/DruvaRam/maven-release.git</url>
+		<connection>scm:git:git@github.com:DruvaRam/maven-release.git</connection>
+		<developerConnection>scm:git:git@github.com:DruvaRam/maven-release.git</developerConnection>
+		<url>scm:git:git@github.com:DruvaRam/maven-release.git</url>
           <tag>maven-druva-release-0.1.16</tag>
   </scm>
 
@@ -20,14 +20,14 @@
 		<!-- Publish versioned releases here -->
 		<repository>
 			<id>nexusreleases</id>
-			<url>http://localhost:8081/repository/druva-maven-release/</url>
+			<url>http://34.238.28.106:8081/nexus/content/repositories/releases/</url>
 		</repository>
 
 		<!-- Publish snapshots here -->
 		<snapshotRepository>
 			<id>nexussnapshots</id>
 			<name>My snapshots</name>
-			<url>http://localhost:8081/repository/druva-maven-snapshot/</url>
+			<url>http://34.238.28.106:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
